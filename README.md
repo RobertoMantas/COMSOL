@@ -38,10 +38,9 @@ The three heat-emitting clusters that emulate the RHUs have aluminum as a materi
 
 Next, we configure the heat transfer module. The options that we will adjust here will be the initial values for different solids, the boundary conditions of the block containing the regolith and the heat source for each cluster. Without loss of generality, the initial temperature value for the regolith is set to 235K. Independently of the chosen initial temperature, the system converges to a new periodic situation once the equation is integrated with the emitting power of the RHU and the surface sinusoidal temperature variation. The surface T is changing with a sinusoidal function to mimic the skin surface temperature response to solar heating. The upper and lower value of T is taken from TES remote observations. For the upper layer (the surface), the temperature will be changing with a sin function:
 
-T(t) =T_avg+∇T*sin⁡((2*π*(t-6))/24)
+	T(t) =T_avg+∇T*sin⁡((2*π*(t-6))/24)
 
-Where,
-
+    Where:
 	•	Tavg is the average temperature (235 K), which is semi-sum of Tmax and Tmin taken from TES data for Oxia Planum, (200 K-270 K) (I6).
 
 	•	∇T is the semi-amplitude of the diurnal temperature variation (35 K) which is (Tmax-Tmin)/2 and Tmax and Tmin were taken from TES data for Oxia Planum, (200 K-270 K) (I6).
